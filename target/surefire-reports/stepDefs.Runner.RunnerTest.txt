@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: stepDefs.Runner.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in stepDefs.Runner.RunnerTest
+initializationError(stepDefs.Runner.RunnerTest)  Time elapsed: 0.001 sec  <<< ERROR!
+cucumber.runtime.CucumberException: Error parsing feature file features/MintAccountManagement.feature
+Caused by: gherkin.lexer.LexingError: 
+Lexing error on line 151: '@Billing Info
+Scenario: Update Billing Info 
+	Given I navigate to the MINT Account Management
+	When I provide "2135366248" in PhoneNumber field 
+	And I provide "test123" in Password field
+	Then I click on LogIn button
+	Then I should see MINT Account Management hompage "/account/summary"
+	When I click on Billing Info button
+	Then I should see Billing Info Page "/account/billing"
+	Then I click on Change Billing Info button
+	Then I provide "4067129148899676" in CreditCard field
+	Then I provide "110" in CVV field
+	Then I provide "12/16" in Expiry field
+	Then I provide "Saravanan" in FirstName field
+	Then I provide "Ultrasmith" in LastName field
+	Then I provide "4676 Tuttles" in Address1 field
+	Then I provide "View Drive" in Address2 field
+	Then I provide "Dublin" in City field
+	Then I provide "OH" in State field
+	Then I provide "92626" in ZipCode field
+	Then I click on UpDate Billing Info button
+	Then I should see Success Message
+%_FEATURE_END_%'. See http://wiki.github.com/cucumber/gherkin/lexingerror for more information.
+

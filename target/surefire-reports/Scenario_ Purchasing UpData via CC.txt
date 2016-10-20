@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: Purchasing UpData via CC
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 1, Skipped: 13, Time elapsed: 0.053 sec <<< FAILURE! - in Scenario: Purchasing UpData via CC
+Scenario: Purchasing UpData via CC  Time elapsed: 0 sec  <<< ERROR!
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.IllegalArgumentException: Invalid browser [safari]
+
