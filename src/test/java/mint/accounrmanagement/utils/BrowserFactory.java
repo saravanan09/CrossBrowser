@@ -58,7 +58,7 @@ public class BrowserFactory {
 
 	private static WebDriver createChromeDriver() {
 		System.out.println("ins");
-		System.setProperty("webdriver.chrome.driver", "E://Project//ChromeDriver_2.22//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src//main//resources//ChromeDriver//chromedriver.exe");
 		return new ChromeDriver();
 	}
 	
