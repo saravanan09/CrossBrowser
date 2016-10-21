@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "classpath:features",
 		plugin = {"pretty", "html:target/cucumber-html-report"},
-		tags = {}
+		tags = {"@ValidLogin,@InvalidLogin"}
 		)
 public class RunnerTest {
 
